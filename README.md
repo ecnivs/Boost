@@ -1,2 +1,2 @@
 # RocketGd
-Simple Robot game with Godot.
+Simple Rocket game with Godot.
