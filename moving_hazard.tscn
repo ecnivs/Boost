@@ -14,6 +14,8 @@ points = PackedVector3Array(-1.5, -1.49971, -1.49971, 1.5, 1.49978, 1.49978, 1.5
 [node name="MovingHazard" type="AnimatableBody3D" groups=["Hazard"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74099, 0)
 script = ExtResource("1_jhh70")
+destination = Vector3(3, 5, 0)
+duration = 4.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 material_override = SubResource("StandardMaterial3D_imtve")

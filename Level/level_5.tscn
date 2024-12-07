@@ -34,8 +34,7 @@ transform = Transform3D(1, 0, 0, 0, 0.978148, 0.207912, 0, -0.207912, 0.978148, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 1.53833, 0)
 
 [node name="MovingHazard" parent="." instance=ExtResource("3_ofe75")]
-destination = Vector3(0, 2, 0)
-duration = 3.0
+duration = 2.5
 
 [node name="Floor" parent="." instance=ExtResource("4_k2yfx")]
 
