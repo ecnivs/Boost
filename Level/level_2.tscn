@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dj2dfpl52quqd"]
+[gd_scene load_steps=9 format=3 uid="uid://b8li8p7ucb1wp"]
 
-[ext_resource type="PackedScene" uid="uid://2psp66v0861x" path="res://player.tscn" id="1_0530j"]
-[ext_resource type="Script" path="res://Level/landing_pad.gd" id="1_jexqx"]
+[ext_resource type="Script" path="res://Level/landing_pad.gd" id="1_rg3yg"]
+[ext_resource type="PackedScene" uid="uid://2psp66v0861x" path="res://player.tscn" id="2_68x7u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jvse3"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -40,6 +40,12 @@ use_collision = true
 size = Vector3(30, 8, 5)
 material = SubResource("StandardMaterial3D_wjrgo")
 
+[node name="Obstacle" type="CSGBox3D" parent="." groups=["Hazard"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+use_collision = true
+size = Vector3(17, 1, 2)
+material = SubResource("StandardMaterial3D_wjrgo")
+
 [node name="LaunchPad" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.2, 0)
 use_collision = true
@@ -51,10 +57,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.2, 0)
 use_collision = true
 size = Vector3(2, 0.4, 2)
 material = SubResource("StandardMaterial3D_enemn")
-script = ExtResource("1_jexqx")
-file_path = "res://Level/level_2.tscn"
+script = ExtResource("1_rg3yg")
+file_path = "res://Level/level_3.tscn"
 
-[node name="Player" parent="." instance=ExtResource("1_0530j")]
+[node name="Player" parent="." instance=ExtResource("2_68x7u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 1.4, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
