@@ -38,6 +38,7 @@ duration = 2.5
 
 [node name="Floor" parent="." instance=ExtResource("4_k2yfx")]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="CSGBox3D" type="CSGBox3D" parent="." groups=["Hazard"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.18867, 1.8522, 0.149783)
+use_collision = true
 size = Vector3(0.513184, 3.54889, 2.4144)
